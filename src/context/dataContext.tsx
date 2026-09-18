@@ -31,7 +31,7 @@ export const DataContextProvider = ({ children }: React.PropsWithChildren) => {
   const [inicio, setInicio] = useState(getDate(30));
   const [final, setFinal] = useState(getDate(0));
   const { data, loading, error } = useFetch<TransactionTypeData[]>(
-    `${API_URL}/api/transactions?startDate=${inicio}&endDate${final}`,
+    `${API_URL}/api/transactions?startDate=${inicio}&endDate=${final}`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
