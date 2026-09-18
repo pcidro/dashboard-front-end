@@ -4,7 +4,7 @@ import PageResumo from "./resumo/page";
 
 export default function Page() {
   return (
-    <div>
+    <div className="container">
       <SideNav />
       <main>
         <Header />
