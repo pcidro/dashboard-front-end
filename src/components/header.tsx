@@ -1,3 +1,9 @@
+import DateRange from "./dateRange";
+
 export default function Header() {
-  return <div></div>;
+  return (
+    <div>
+      <DateRange />
+    </div>
+  );
 }
