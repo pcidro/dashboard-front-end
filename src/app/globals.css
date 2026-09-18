@@ -51,4 +51,6 @@ ul {
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
+  width: 100%;
+  max-width: none;
 }

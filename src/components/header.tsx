@@ -1,9 +1,13 @@
 import DateRange from "./dateRange";
+import Months from "./months";
 
 export default function Header() {
   return (
-    <div>
-      <DateRange />
-    </div>
+    <header className="mb">
+      <div className="mb">
+        <DateRange />
+        <Months />
+      </div>
+    </header>
   );
 }
