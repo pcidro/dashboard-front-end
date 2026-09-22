@@ -1,3 +1,10 @@
+import ResumoCards from "@/components/resumo/ResumoCards";
+import { ResumoContextProvider } from "@/context/resumoContext";
+
 export default function PageResumo() {
-  return <div>Resumo</div>;
+  return (
+    <ResumoContextProvider>
+      <ResumoCards />
+    </ResumoContextProvider>
+  );
 }
